@@ -1,0 +1,83 @@
+/*  Style Sheet
+    --------------------------------------------------------------
+	Style name:			Slave Island 
+	Original author:	Anabi
+    --------------------------------------------------------------
+*/
+.hexagon {
+	position: relative;
+	width: 300px;
+	height: 173.21px;
+	margin: 86.60px 0;
+	background-image: url(https://img2.gelbooru.com/images/c7/89/c78966dbabf1bf6e6beb251d19be970b.jpg);
+	background-size: auto 346.4102px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.hexTop, .hexBottom {
+	position: absolute;
+	z-index: 1;
+	width: 212.13px;
+	height: 212.13px;
+	overflow: hidden;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background: inherit;
+	left: 43.93px;
+}
+/*counter transform the bg image on the caps*/
+.hexTop:after, .hexBottom:after {
+	content: "";
+	position: absolute;
+	width: 300.0000px;
+	height: 173.20508075688775px;
+	-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+	-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+	transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+	background: inherit;
+}
+.hexTop {
+	top: -106.0660px;
+}
+.hexTop:after {
+	background-position: center top;
+}
+.hexBottom {
+	bottom: -106.0660px;
+}
+.hexBottom:after {
+	background-position: center bottom;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	top: 0.0000px;
+	left: 0;
+	width: 300.0000px;
+	height: 173.2051px;
+	z-index: 2;
+	background: inherit;
+}
+#nav {
+	float: left;
+	width: 300px;
+	border-right: double 2px;
+}
+#profil > h3 {
+	text-align: center;
+}
+#view {
+	width: calc(100% - 302px);
+	float: left;
+	align-content: center;
+}
+.first-cat > div {
+	height: 25vh;
+	background-image: url("../image/alex-flores-yasuovsriven-panoramic-final-alexflores.jpg");
+	background-position: top;
+	background-size: 100%;
+}
